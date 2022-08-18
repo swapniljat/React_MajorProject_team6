@@ -7,7 +7,11 @@ const addEvent=async(req,res)=>{
         eventId:req.body.eventId,
         eventName:req.body.eventName,
         description:req.body.description,
+<<<<<<< HEAD
         eventImages:req.body.eventImages,
+=======
+        eventImages:req.file.filename,
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
         artistId: req.body.artistId,
       };
 

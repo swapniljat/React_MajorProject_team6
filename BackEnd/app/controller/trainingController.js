@@ -7,7 +7,11 @@ const addTrainings=async(req,res)=>{
         trainingSub:req.body.trainingSub,
         description:req.body.description,
         newBatch:req.body.newBatch,
+<<<<<<< HEAD
         trImages:req.body.trImages,
+=======
+        trImages:req.file.filename,
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
         artistId:req.body.artistId
     }
 

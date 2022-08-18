@@ -15,8 +15,11 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
+<<<<<<< HEAD
 app.use('/Images',express.static('./Images'))
 
+=======
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
 //testing apis
 
 const routerArtist = require("./app/routes/artists_routes");

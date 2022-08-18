@@ -1,6 +1,9 @@
 const db = require("../models");
 const Users = db.users;
+<<<<<<< HEAD
 const sessionStorage=require('sessionstorage')
+=======
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
 
 const addUser = async (req, res) => {
   const info = {
@@ -25,6 +28,7 @@ const getUserBYId = async (req, res) => {
   res.status(200).send(user);
 };
 
+<<<<<<< HEAD
 //signin
 const signInUser = async (req, resp) => {
   let email = req.body.email
@@ -45,4 +49,9 @@ module.exports = {
   addUser,
   getUserBYId,
   signInUser
+=======
+module.exports = {
+  addUser,
+  getUserBYId,
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
 };

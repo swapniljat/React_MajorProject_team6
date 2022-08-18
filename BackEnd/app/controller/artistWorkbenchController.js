@@ -1,7 +1,10 @@
 const db = require("../models");
 const Post = db.artistWorkbench;
+<<<<<<< HEAD
 const multer=require('multer');
 const path=require('path');
+=======
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
 
 
 const addPost = async (req, res) => {
@@ -9,8 +12,12 @@ const addPost = async (req, res) => {
     postId: req.body.postId,
     postName: req.body.postName,
     description: req.body.description,
+<<<<<<< HEAD
     // images:req.file.path,
     images:req.body.images,
+=======
+    images:req.file.filename,
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
     artistId: req.body.artistId,
   };
 
@@ -28,6 +35,7 @@ const getPostForSelf=async(req,res)=>{
   let id=req.params.id;
   let artistWorkbench=await Post.findAll({where:{artistId:id}});
   res.status(200).send(artistWorkbench);
+<<<<<<< HEAD
 }
 
 
@@ -56,10 +64,19 @@ const getPostForSelf=async(req,res)=>{
 //         cb("Give proper format")
 //     }
 // }).single('images')
+=======
+
+}
+
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
 
 module.exports = {
   addPost,
   getPosts,
+<<<<<<< HEAD
   getPostForSelf,
   // upload
+=======
+  getPostForSelf
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
 };

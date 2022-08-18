@@ -17,7 +17,10 @@ sequelize
 const db = {};
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
 db.artists = require("./artists.js")(sequelize, DataTypes);
 db.users = require("./users")(sequelize, DataTypes);
 db.artistWorkbench = require("./artistWorkbench")(sequelize, DataTypes);

@@ -1,6 +1,9 @@
 const db=require("../models");
 const Artists=db.artists;
+<<<<<<< HEAD
 const sessionStorage=require('sessionstorage')
+=======
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
 
 const addArtist= async(req,res)=>{
    
@@ -25,6 +28,7 @@ const getArtistById=async(req,res)=>{
     let id=req.params.id;
     let artist=await Artists.findOne({where:{artistId:id}});
     res.status(200).send(artist);
+<<<<<<< HEAD
 }
 
 //signin
@@ -49,4 +53,12 @@ module.exports={
     addArtist
     ,getArtistById,
     signInArtist
+=======
+
+}
+
+module.exports={
+    addArtist
+    ,getArtistById
+>>>>>>> 03d213b32873fa9ba55862317133824d1147cbf7
 }

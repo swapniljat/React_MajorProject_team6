@@ -1,0 +1,25 @@
+module.exports=(sequelize,DataTypes)=>{
+    return sequelize.define("training",{
+        trId:{
+            type:DataTypes.INTEGER,
+            primaryKey:true,
+            autoIncrement:true
+        },
+        trainingSub:{
+            type:DataTypes.STRING,
+            allowNull:false
+        },
+        description:{
+            type:DataTypes.STRING,
+            allowNull:false
+        },
+        trImages:{
+            type:DataTypes.STRING,
+            allowNull:false
+        },
+        newBatch:{
+            type:DataTypes.STRING,
+            allowNull:false
+        }
+    },{timestamps:false});
+};

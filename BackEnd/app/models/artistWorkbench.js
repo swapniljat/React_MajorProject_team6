@@ -1,0 +1,21 @@
+module.exports=(sequelize,DataTypes)=>{
+    return sequelize.define("artistPosts",{
+        postId:{
+            type:DataTypes.INTEGER,
+            primaryKey:true,
+            autoIncrement:true
+        },
+        postName:{
+            type:DataTypes.STRING,
+            allowNull:false
+        },
+        description:{
+            type:DataTypes.STRING,
+            allowNull:false
+        },
+        images:{
+            type:DataTypes.STRING,
+            allowNull:false
+        }
+    },{timestamps:false});
+};
